@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 features = "/Users/ksrikanthreddy/git/SrikanthKomirelly844863_naukri/naukrisrikanth/src/main/resources/features/naukritestcase.feature",
 plugin = {"pretty", "html:reports/cucumber-html-report"},
-tags = {"@tc01_login"},
+tags = {"@tc01_login,@tc02_Edit_Profile"},
 glue = {"com.stepdefiniton"},
 monochrome = true
 )
