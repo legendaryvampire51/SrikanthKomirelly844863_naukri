@@ -29,7 +29,7 @@ public class Testbase {
 		
 		prop = new Properties();
 		try {
-			String propertyFilePath="E:\\eclipse-workspace\\naukrisrikanth\\src\\test\\resources\\testdata\\config.properties";
+			String propertyFilePath="/Users/ksrikanthreddy/git/SrikanthKomirelly844863_naukri/naukrisrikanth/src/test/resources/testdata/config.properties";
 			BufferedReader reader = new BufferedReader(new FileReader(propertyFilePath));
 			prop.load(reader);
 		} catch (FileNotFoundException e) {
@@ -44,14 +44,14 @@ public class Testbase {
 	
 	public static void initialization() {
 		
-		String browserName = prop.getProperty("browser");
-		
+		//String browserName = prop.getProperty("browser");
+		String browserName = "chrome";
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "E:\\eclipse-workspace\\naukrisrikanth\\src\\test\\resources\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/Users/ksrikanthreddy/git/SrikanthKomirelly844863_naukri/naukrisrikanth/src/test/resources/driver/chromedriver");
 			driver = new ChromeDriver();
 	}
 		else if(browserName.equalsIgnoreCase("firefox")){
-			System.setProperty("webdriver.gecko.driver", "E:\\eclipse-workspace\\naukrisrikanth\\src\\test\\resources\\driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "/Users/ksrikanthreddy/git/SrikanthKomirelly844863_naukri/naukrisrikanth/src/test/resources/driver/geckodriver");
 			driver = new FirefoxDriver();
 		}
 		
@@ -64,8 +64,8 @@ public class Testbase {
 	
 	public void url()
 	{
-		driver.get(prop.getProperty("url"));
-		//driver.get("https://www.naukri.com/");
+		//driver.get(prop.getProperty("url"));
+		driver.get("https://www.naukri.com/");
 	
 		String windowTitle= getCurrentWindowTitle();
 		String mainWindow = getMainWindowHandle(driver);

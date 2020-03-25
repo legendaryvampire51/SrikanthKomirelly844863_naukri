@@ -12,7 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Excel_utiliy {
 	public  String excel_email(int i) throws IOException {
 		  
-		  FileInputStream fil = new FileInputStream(new File("E:\\eclipse-workspace\\naukrisrikanth\\src\\test\\resources\\testdata\\naukri.xlsx"));
+		  FileInputStream fil = new FileInputStream(new File("/Users/ksrikanthreddy/git/SrikanthKomirelly844863_naukri/naukrisrikanth/src/test/resources/testdata/naukri.xlsx"));
 		  XSSFWorkbook workbook = new XSSFWorkbook(fil);
 		  XSSFSheet sheet=workbook.getSheet("Sheet1");
 		  
@@ -25,7 +25,7 @@ public class Excel_utiliy {
 }
 	public  String excel_password(int i) throws IOException {
 		  
-		  FileInputStream fil = new FileInputStream(new File("E:\\eclipse-workspace\\naukrisrikanth\\src\\test\\resources\\testdata\\naukri.xlsx"));
+		  FileInputStream fil = new FileInputStream(new File("/Users/ksrikanthreddy/git/SrikanthKomirelly844863_naukri/naukrisrikanth/src/test/resources/testdata/naukri.xlsx"));
 		  XSSFWorkbook workbook = new XSSFWorkbook(fil);
 		  XSSFSheet sheet=workbook.getSheet("Sheet1");
 		  
