@@ -44,11 +44,11 @@ public class EditProfile_main extends Testbase {
 	public void movetoMyNaukri() throws InterruptedException {
 
 
-		System.out.println("ttyjryjr");
+	
 
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		WebElement MyNaukri = driver.findElement(By.xpath("/html/body/div[1]/div/div/ul[2]/li[2]/a/div[2]"));
+		//WebElement MyNaukri = driver.findElement(By.xpath("/html/body/div[1]/div/div/ul[2]/li[2]/a/div[2]"));
 		WebDriverWait wait = new WebDriverWait (driver, 90);
 		wait.until(ExpectedConditions.elementToBeClickable(MyNaukri));
 
